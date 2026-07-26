@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+<h1 id="Welcome">All about automobiles</h1>
+
+<nav class="navbar">
+    <div id ="navbutton">
+        <button>
+            <span class ="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <div id = "headernav">
+        <ul>
+            <li id = "homebtn"><a href="#">Home</a></li>
+            <li id = "page1btn"><a href="#">Class Type</a></li>
+            <li id = "page2btn"><a href="#">Engine Type</a></li>
+            <li id = "page3btn"><a href ="#">Quiz</a></li>
+            <li id = "page4btn"><a href ="#">Game</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class =" home">    
+    
+    <img src="images/lambo.jpg" alt="Aventador">
+    <button class = "homepagebutton">Click here to begin.</button>
+</div>
+<div class = "onebox">
+    <h2> Type of automobiles </h2>
+    <p>There are many type of performance category, but I'll be focusing on those that are commonly found in motorsports. Click on the images to hear what they sound like! </p>
+    
+    <div id="sportscar">
+        <h3>Sports</h3>
+        <p>A sports car is designed to be enjoyable to drive. Highly responsive handling, quick acceleration, and a lower center of gravity. It does not have to be extremely expensive or powerful</p>
+        <img src="images/bannercar.jpg" alt="sports car" width="300" id="s2k" >
+        <audio id ="s2kengine">
+            <source src="audio/s2k.m4a" type="audio/mp4">
+        </audio>
+        <p>Typical Horsepower: 180-450 HP</p>
+        <p>TLDR: Fun handling and driving.</p>
+     
+    </div>
+    <div id="Super">
+        <h3>Supers</h3>
+        <p>An exotic, high-performance car designed for exception speed, handling and striking design. Often features advanced engineering and premium materials. </p>
+        <img src="images/lambo.jpg" alt="super car" width="600" id="lambo">
+        <audio id="lamboengine">
+            <source src="audio/lambo.m4a" type="audio/mp4">
+        </audio>
+        <p>Typical Horsepower: 600-900 HP </p>
+        <p>TLDR:Extreme performance and striking looks.</p>
+
+    </div>
+    <div id ="Hyper">
+        <h3>Hypers</h3>
+        <p>The pinnacle of automotive performance, showcasing the latest technology, extreme sped and limited production. Represents the highest level of engineering and exclusivity. </p>
+        <img src="images/hyper.jpg" alt="hyper car" width="1000" id = "p1">
+        <audio id="p1engine">
+            <source src="audio/p1.m4a" type="audio/mp4">
+        </audio>
+        <p>Typical Horsepower: 1,000-2,000+HP</p>
+        <p>TLDR: The highest level of automotive performance, cutting-edge technology and very limited productions.</p>
+
+    </div>
+
+
+    
+</div>
+
+<div class = "twobox">
+    <h2>Type of engines</h2>
+
+
+    <div id = "s2000bay"> 
+        <h3>Honda S2000</h3>
+        <img src="images/bannercar.jpg" alt="S2000" width="300" > 
+        <p>The Honda S2000 or S2K for short, is powered by the legendary F20C engine. It is a naturally aspirated 2.0-liter, inline-4 engine. Producing 237 to 247 Horsepower. It also boast a staggering 9,000 RPM redline.</p>
+        <p>The F20C, produces 247 hp for the Japanese Domestic Market, while the US/EU Market get's a 237 Hp version.</p>
+        <p>Features Honda's VTEC system, which engages aggressively around 6,000 RPM. The engine is known for it's "split personality". While on low RPMs, the engine provides low torque, but once it reaches a high enough RPM, a surge of power kicks in.</p>
+
+    </div>
+
+    <div id="lambobay">
+        <h3>Lamborghini Aventador LP 700-4</h3>
+        <img src="images/lambo.jpg" alt="Aventador" width="300">
+        <p>The Lamborghini Aventador LP700-4, powered by the L539, 6.5-liter, naturally aspirated V12 engine, produces 700 Horsepower.</p>
+        <p>Paired with a 7-speed ISR single-clutch transmission.</p>
+
+    </div>
+
+    <div id ="p1bay">
+        <h3>McLaren P1</h3>
+        <img src="images/hyper.jpg" alt="hyper car" width="300">
+        <p>The McLaren P1, considered to be the Holy Trinity of hypercars. Along side the Porsche 918 Spyder and the Ferrari LaFerrari.</p>
+        <p>Powered by a 3.8L twin-turbocharged V8 with a single electric motor, produces 903 Horsepower.</p>
+        <p>The M838T Engine redlines at 8500 RPM, but 80% of the engine's torque is available as low as 2000RPM.</p>
+    </div>
+
+
+
+
+
+</div>
+
+<div class = "quizbox">
+    <h2>Quiz</h2>
+    
+<fieldset>
+    <legend>1. What's the name of this car?</legend>
+    <img src="images/lambo.jpg" alt="Aventador" width="300"> 
+    <input type="radio" name="q1" value="S2000"> Honda S2000
+    <input type="radio" name="q1" value="Lamborghini"> Lamborghini Aventador 
+    <input type="radio" name="q1" value="P1"> McLaren P1
+    
+</fieldset>
+
+<fieldset>
+    <legend>2. What engine does a Honda S2000 have?</legend>
+    <img src="images/bannercar.jpg" alt="S2000" width="200" > 
+    <input type="radio" name="q2" value="M838T"> M383T
+    <input type="radio" name="q2" value="L539"> l539
+    <input type="radio" name="q2" value="F20C"> F20C
+</fieldset>
+
+<fieldset>
+    <legend>3. What sound is this car from?</legend>
+    <audio controls>
+        <source src="audio/lambo.m4a" type ="audio/mp4">
+    </audio>
+    <input type="radio" name="q3" value="lambo"> Aventador
+    <input type="radio" name="q3" value="S2000"> S2000
+    <input type="radio" name="q3" value="P1"> P1
+</fieldset>
+
+<button id="btnSubmit">Submit Quiz</button>
+<h3 id="scorebox">Not submitted</h3>
+
+</div>
+
+
+<div class = "gamebox">
+    <h2>Game</h2>
+    <p>Click to pop the tire!</p>
+    <h2 id="scoreBox">Score: 0</h2>
+    <img id="gamecarid" src="./images/tire.png" alt="tire" width="200">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer>All images are in-game screenshots taken from Assetto Corsa. All copyright reserves to respective brands.</footer>
+</body>
+</html>
