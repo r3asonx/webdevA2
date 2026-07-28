@@ -6,6 +6,7 @@
     text-decoration: none;
     overflow-x: hidden; /* prevents user to view outside of the viewport */
     
+    
 }
 footer{
     background-color: whitesmoke;
@@ -363,9 +364,7 @@ h2{
 
 
 @media (max-width: 800px){
-    body{
-        overflow-x: hidden;
-    }
+   
     #headernav img{
         display: none;
 
@@ -414,7 +413,7 @@ h2{
     }
     
     .home img{
-        height: auto;
+        height: 100%;
         width: auto;
     }
 }
