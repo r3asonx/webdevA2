@@ -363,6 +363,9 @@ h2{
 
 
 @media (max-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
     #headernav img{
         display: none;
 
