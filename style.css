@@ -30,6 +30,7 @@ h2{
     
 }
 #Welcome{
+   cursor: pointer;
    font-family: "needforfont";
    display: inline-block;
    padding: 20px;
@@ -362,6 +363,10 @@ h2{
 
 
 @media (max-width: 800px){
+    #headernav img{
+        display: none;
+
+    }
    .onebox div{
     display: grid;
     column-gap: 20px;

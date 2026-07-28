@@ -1,11 +1,13 @@
+
 const navbutton = document.querySelector('#navbutton');
 const headernav = document.querySelector('#headernav');
-
+const headerbutton = document.querySelector('#Welcome');
 const homebutton = document.querySelector('#homebtn');
 const page1button = document.querySelector('#page1btn');
 const page2button = document.querySelector('#page2btn');
 const page3button = document.querySelector('#page3btn');
 const page4button = document.querySelector('#page4btn');
+const fullscreenbutton = document.querySelector('#fulls');
 const home = document.querySelector('.home');
 const onebox = document.querySelector('.onebox');
 const twobox = document.querySelector('.twobox');
@@ -21,6 +23,21 @@ navbutton.addEventListener('click', function()  {
 
    
 });
+
+headerbutton.addEventListener('click', function(){/*Making the title or rather h1 be the refresh button */
+    window.location.reload();
+})
+
+fullscreenbutton.addEventListener('click', function(){
+     if(document.fullscreenElement){ /*exitfullscreen is to check if currently it is in fullscreen */
+        document.exitFullscreen();/* this is targetting the full page not just element to exit out of fullscreen */
+    }
+    else{
+        document.documentElement.requestFullscreen();/*document.documentelement is targeting everything in the <html></html> */
+    }
+    
+   
+})
 
 
 
