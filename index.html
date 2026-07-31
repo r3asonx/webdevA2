@@ -7,7 +7,7 @@
     <meta name ="mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="manifest" href="manifest.json" />
-    <title>Document</title>
+    <title>Automobile</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -41,9 +41,10 @@
     <img src="images/lambo.jpg" alt="Aventador">
     <button class = "homepagebutton">Click here to begin.</button>
 </div>
+
 <div class = "onebox">
     <h2> Type of automobiles </h2>
-    <p>There are many type of performance category, but I'll be focusing on those that are commonly found in motorsports. Click on the images to hear what they sound like! </p>
+    <p id ="headerparagraph">There are many type of performance category, but I'll be focusing on those that are commonly found in motorsports. Click on the images to hear what they sound like! </p>
     
     <div id="sportscar">
         <h3>Sports</h3>
@@ -124,18 +125,42 @@
 <fieldset>
     <legend>1. What's the name of this car?</legend>
     <img src="images/lambo.jpg" alt="Aventador" width="300"> 
-    <input type="radio" name="q1" value="S2000"> Honda S2000
-    <input type="radio" name="q1" value="Lamborghini"> Lamborghini Aventador 
-    <input type="radio" name="q1" value="P1"> McLaren P1
+    
+    <label class = option>
+        <input type="radio" name="q1" value="S2000">
+        <span>Honda S2000</span>
+    </label>
+    <label class = option>
+        <input type="radio" name="q1" value="Lamborghini"> 
+        <span>Lamborghini Aventador </span>
+    </label>
+    <label class = option>
+        <input type="radio" name="q1" value="P1">
+        <span>McLaren P1</span>
+    </label>
     
 </fieldset>
 
 <fieldset>
     <legend>2. What engine does a Honda S2000 have?</legend>
     <img src="images/bannercar.jpg" alt="S2000" width="200" > 
-    <input type="radio" name="q2" value="M838T"> M383T
-    <input type="radio" name="q2" value="L539"> l539
-    <input type="radio" name="q2" value="F20C"> F20C
+    
+    <label class = option>
+        <input type="radio" name="q2" value="M838T">
+        <span>M383T</span> 
+    </label>
+    
+    <label class = option>
+        <input type="radio" name="q2" value="L539"> 
+        <span>l539</span>
+    </label>
+   
+    <label class = option>
+        <input type="radio" name="q2" value="F20C">
+        <span>F20C</span> 
+    </label>
+   
+    
 </fieldset>
 
 <fieldset>
@@ -143,12 +168,27 @@
     <audio controls>
         <source src="audio/lambo.m4a" type ="audio/mp4">
     </audio>
-    <input type="radio" name="q3" value="lambo"> Aventador
-    <input type="radio" name="q3" value="S2000"> S2000
-    <input type="radio" name="q3" value="P1"> P1
+    <label class = option>
+        <input type="radio" name="q3" value="lambo">
+        <span>Aventador</span>
+    </label>
+    
+    <label class = option>
+        <input type="radio" name="q3" value="S2000">
+        <span> S2000</span>
+    </label>
+   
+    <label class = option>
+        <input type="radio" name="q3" value="P1"> 
+        <span>P1</span>
+    </label>
+    
+   
+    
 </fieldset>
 
 <button id="btnSubmit">Submit Quiz</button>
+<button id="resetquiz">Reset Quiz</button>
 <h3 id="scorebox">Not submitted</h3>
 
 </div>

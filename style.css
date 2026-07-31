@@ -82,11 +82,16 @@ h2{
     right: 0;
     width: 50px;
     height: 50px;
-    
+    background-image: url("images/sprite.png");
+    background-size: 100px 50px;
+    background-position: 0 -10px;
     background-color: #0000002c;
     border: 2px solid #ffffff;
     cursor: pointer;
     z-index: 1000;/*making it the highest layer*/
+}
+#navbutton.show{
+    background-position: -50px -10px;/*for my sprite*/ 
 }
 #headernav {
     
@@ -117,6 +122,7 @@ h2{
 	z-index: 100;
 	transform: rotate(20deg);
     background-image:url("images/bannercar.jpg");
+    background-repeat: no-repeat;
     
     background-size: cover;
     
@@ -191,9 +197,15 @@ h2{
 }
 .onebox p{
     padding: 30px;
-   border-radius: 30px;
+    border-radius: 30px;
     background-color: #787276;
+    
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+#headerparagraph{
+    font-size: 26px;
+    
+    background-color: #ea6c81 ;
 }
 .onebox img{
    
@@ -275,13 +287,17 @@ h2{
     box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 .quizbox fieldset{
-    display: grid;
+    display: flex;
     place-items: center;
     padding: 70px;
     background-color: grey;
     border-radius: 30px;
     box-shadow: 0 0px 20px rgb(212, 78, 78);
     
+}
+.quizbox img{
+    border-radius: 30px;
+    box-shadow: 0 0 20px aquamarine;
 }
 .quizbox fieldset legend{
     font-size: 20px;
@@ -307,6 +323,34 @@ h2{
     
     border-radius: 30px;
 }
+.quizbox fieldset{
+    background-color: #A66D7C;
+    gap: 30px;
+}
+
+.quizbox label{
+    padding: 10px;
+
+}
+.option{
+    background-color: #C2A6AA;
+    box-shadow: 0 0 20px #39494A;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100px;
+    flex: 1;
+    font-size: 20px;
+    font-family: "needforfont";
+    cursor: pointer;
+}
+input[type="radio"]{
+    accent-color: #1E3138;
+    width: 20px;
+    height: 20px;
+    
+    cursor: pointer;
+}
+
 .gamebox{
      width: 100vw;
     height: 90vh;
@@ -395,6 +439,16 @@ h2{
     height: 50vh;
     border: 1px solid red;
     border-radius: 30px;
+
+    }
+    .quizbox fieldset{
+    display: grid;
+    place-items: center;
+    
+    }
+    .quizbox label{
+    padding: 10px;
+    width: 60%;
 
     }
     .homepagebutton{

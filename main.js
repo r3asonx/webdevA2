@@ -19,6 +19,7 @@ const homestart = document.querySelector('.homepagebutton');
 
 navbutton.addEventListener('click', function()  {
     headernav.classList.toggle('show');
+    navbutton.classList.toggle('show');
     console.log('clicked');/*just to check if button is being pressed for testing */
 
    
@@ -116,6 +117,7 @@ document.getElementById("lambo").addEventListener("click", function(){
 
 const btnSubmit=document.querySelector("#btnSubmit");  
 const scorebox=document.querySelector("#scorebox");
+const resetquiz=document.querySelector("#resetquiz");
 
 let corrAnsArray=["Lamborghini","F20C","lambo"];
 function CheckAns(){    
@@ -130,6 +132,16 @@ function CheckOneQn(qnNo,CorrAns){
     let qTemp=document.querySelector("input[name='q"+qnNo+"']:checked").value;
     if(qTemp==CorrAns)score++;
     console.log(qTemp); //check q1 value retrieved
+}
+resetquiz.addEventListener("click", ResetQuiz);
+function ResetQuiz(){
+    score = 0;
+    const radios = document.querySelectorAll("input[type='radio']");/*had to ask ai for this */
+
+    radios.forEach(function(radio){
+        radio.checked = false;
+    });
+    scorebox.innerHTML="Score:"+score;
 }
 
 /*Game */
@@ -161,22 +173,7 @@ scoreBox.innerHTML = "Score: " + score;
 
 gamecarid.addEventListener("click",carCatch);
 
-document.addEventListener("keydown",function(evt){
-console.log(evt);
-if(evt.code=="KeyT"){
-gamecarid.classList.add("shrink");
-}
-if(evt.code=="KeyU"){
-gamecarid.classList.remove("shrink");
-}
-if(evt.code=="KeyA"){
-gamecarid.classList.add("anim1");
-}
-if(evt.code=="KeyB"){
-gamecarid.classList.remove("anim1");
-}
 
-});
 gamecarid.addEventListener("click",function(){
     gamecarid.classList.add("anim2");
 
