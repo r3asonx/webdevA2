@@ -425,7 +425,7 @@ input[type="radio"]{
     writing-mode: horizontal-tb; /*lr to keep it on left to right*/
     
     padding:5px;
-    width: 30%;
+    width: 100%;
    
     }
 
