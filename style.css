@@ -127,6 +127,12 @@ h2{
     background-size: cover;
     
 }
+#headernav img{
+    position: relative;
+    top:12%;
+    transform: rotate(-20deg);
+
+}
 #headernav li a{
     color:rgb(255, 252, 252);
     box-shadow: 0 0 20px rgb(255, 0, 0);

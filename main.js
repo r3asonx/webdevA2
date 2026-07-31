@@ -27,7 +27,7 @@ navbutton.addEventListener('click', function()  {
 
 headerbutton.addEventListener('click', function(){/*Making the title or rather h1 be the refresh button */
     window.location.reload();
-})
+});
 
 fullscreenbutton.addEventListener('click', function(){
      if(document.fullscreenElement){ /*exitfullscreen is to check if currently it is in fullscreen */
@@ -38,7 +38,7 @@ fullscreenbutton.addEventListener('click', function(){
     }
     
    
-})
+});
 
 
 

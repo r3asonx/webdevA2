@@ -1,7 +1,7 @@
 { "name": "All About Automobiles",
 "short_name": "AAA",
 "start_url": "index.html",
-"display": "standalone",
+"display": "fullscreen",
 "background_color": "#ffffff",
 "theme_color": "#00FF00",
 "icons": [
